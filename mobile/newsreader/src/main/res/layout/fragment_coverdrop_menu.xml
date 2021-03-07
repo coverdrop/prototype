@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.coverdrop.CoverdropFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/text_next_send_time"
+                android:text="@string/text_template_coverdrop_next_send_at" />
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar_next_send_time"
+                android:progress="42" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/text_coverdrop_active_chats"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text_empty_active_chats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_coverdrop_active_chats_empty" />
+
+            <LinearLayout
+                android:id="@+id/layout_active_chats_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/text_coverdrop_available_contacts"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text_empty_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_coverdrop_contacts_empty" />
+
+            <LinearLayout
+                android:id="@+id/layout_available_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/button_debug_force_sync"
+            android:text="(DEBUG) Force sync now"/>
+    </LinearLayout>
+</ScrollView>

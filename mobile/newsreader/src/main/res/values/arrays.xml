@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interval_names">
+        <item>Disabled</item>
+        <item>20 Seconds</item>
+        <item>1 Minute</item>
+        <item>15 Minutes</item>
+        <item>1 Hour</item>
+    </string-array>
+
+    <string-array name="interval_values">
+        <item>-1</item>
+        <item>20000</item>
+        <item>60000</item>
+        <item>900000</item>
+        <item>3600000</item>
+    </string-array>
+</resources>

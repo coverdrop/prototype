@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        app:key="coverdrop_sync_interval"
+        app:title="Coverdrop Interval"
+        app:summary="The frequency of the cover traffic"
+        app:entries="@array/interval_names"
+        app:entryValues="@array/interval_values"/>
+
+</PreferenceScreen>

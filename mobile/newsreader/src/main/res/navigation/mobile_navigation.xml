@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.coverdrop.newsreader.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/action_navigation_news_to_navigation_news_story"
+            app:destination="@id/navigation_news_story" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_news_story"
+        android:name="com.coverdrop.newsreader.ui.news.NewsStoryFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news_story" />
+
+    <fragment
+        android:id="@+id/navigation_reporter"
+        android:name="com.coverdrop.newsreader.ui.reporters.ReporterFragment"
+        android:label="@string/title_reporters"
+        tools:layout="@layout/fragment_reporters" />
+
+
+    <fragment
+        android:id="@+id/navigation_coverdrop"
+        android:name="com.coverdrop.newsreader.ui.coverdrop.CoverdropFragment"
+        android:label="@string/title_coverdrop"
+        tools:layout="@layout/fragment_coverdrop">
+        <action
+            android:id="@+id/action_navigation_coverdrop_to_navigation_coverdrop_splash"
+            app:destination="@id/navigation_coverdrop_splash" />
+        <action
+            android:id="@+id/action_navigation_coverdrop_to_navigation_coverdrop_public_prefs"
+            app:destination="@id/navigation_coverdrop_public_prefs" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_coverdrop_public_prefs"
+        android:name="com.coverdrop.newsreader.ui.coverdrop.CoverdropPublicPreferencesFragment"
+        android:label="@string/title_coverdrop"/>
+
+    <fragment
+        android:id="@+id/navigation_coverdrop_splash"
+        android:name="com.coverdrop.newsreader.ui.coverdrop.CoverdropSplashFragment"
+        android:label="@string/title_coverdrop_splash"
+        tools:layout="@layout/fragment_coverdrop_splash">
+        <action
+            android:id="@+id/action_navigation_coverdrop_splash_to_navigation_coverdrop_menu"
+            app:destination="@id/navigation_coverdrop_menu"
+            app:popUpTo="@+id/navigation_coverdrop"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_coverdrop_menu"
+        android:name="com.coverdrop.newsreader.ui.coverdrop.CoverdropMenuFragment"
+        android:label="Coverdrop Menu"
+        tools:layout="@layout/fragment_coverdrop_menu" >
+        <action
+            android:id="@+id/action_navigation_coverdrop_menu_to_navigation_coverdrop_chat"
+            app:destination="@id/navigation_coverdrop_chat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_coverdrop_chat"
+        android:name="com.coverdrop.newsreader.ui.coverdrop.CoverdropChatFragment"
+        android:label="Chat Session"
+        tools:layout="@layout/fragment_coverdrop_chat" />
+</navigation>

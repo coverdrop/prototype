@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/text_chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="This is a long dummy message of which we know little so far. But it's proud to be here with us tonight."
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/text_chat_time"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="75"
+            android:gravity="end"
+            android:text="Created: 5min ago" />
+
+        <TextView
+            android:id="@+id/text_delay_warning"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="75"
+            android:gravity="end"
+            android:text="This recent message might not have been sent yet" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+enclave {
+    from "sgx_tstdc.edl" import *;
+
+    trusted {
+        /* define ECALLs here. */
+		public sgx_status_t initialize(size_t msglength);
+		public sgx_status_t process_message([in, size=len] char* toEnclave, size_t len, [out, size=1]uint8_t* processedNum);
+		public sgx_status_t clean_array();
+    };
+
+   /*
+     * ocall_print_string - invokes OCALL to display string buffer inside the enclave.
+     *  [in]: copy the string buffer to App outside.
+     *  [string]: specifies 'str' is a NULL terminated buffer.
+     */
+    untrusted {
+        void ocall_print_string([in, string] const char *str);
+		int transmit_message_to_users([in, size=len] const char *str, size_t len);
+    };
+};

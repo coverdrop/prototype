@@ -1,0 +1,4 @@
+rootProject.name='MobileApps'
+include ':newsreader'
+include ':lib_empty'
+include ':lib'
