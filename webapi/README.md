@@ -1,3 +1,9 @@
+# WebApi
+
+Point of contact for this folder: [@lambdapioneer](https://github.com/lambdapioneer)
+
+This folder contains a simple Flask app that implements the web service that decouples the external API and the SGX. It also provides some basic APIs for simulated news content.
+
 ## Setup
 
 This project follows the classic virtualenv/venv with pip configuration. To get started, ensure you have `venv` and `pip` installed on your machine. Then run the following within this folder:

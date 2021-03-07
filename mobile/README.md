@@ -1,3 +1,7 @@
+# Android Library and Demo App
+
+Point of contact for this folder: [@lambdapioneer](https://github.com/lambdapioneer)
+
 This folder contains a work-in-progress prototype/demo app for Android.
 
 It demonstrates calling the API from an app and the cryptographic primitives to interact with the secure element.

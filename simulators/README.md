@@ -1,5 +1,7 @@
 # Simulators
 
+Point of contact for this folder: [@lambdapioneer](https://github.com/lambdapioneer)
+
 This folder contains helpful simulators for testing and development.
 In particular, we provide a `sim_user.py`, `sim_reporter.py`, and a `sim_sgx.py` file.
 
