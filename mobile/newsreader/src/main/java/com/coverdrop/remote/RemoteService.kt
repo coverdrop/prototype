@@ -19,8 +19,8 @@ import org.json.JSONObject
 
 
 private const val LOGTAG = "RemoteService"
-private const val DEFAULT_PROTOCOL = "http"
-private const val DEFAULT_DOMAIN = "coverdrop.cl.cam.ac.uk"
+private const val DEFAULT_PROTOCOL = "https"
+private const val DEFAULT_DOMAIN = "lambdapioneer.de"
 
 private const val AUTH_TOKEN_NEWS = "Token news_app_token"
 
