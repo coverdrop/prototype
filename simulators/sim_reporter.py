@@ -104,7 +104,7 @@ def run(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--url', type=str, default='https://lambdapioneer.de')
+    parser.add_argument('--url', type=str)
     parser.add_argument('--delay', type=int, default=5)
     parser.add_argument('--reporter-id', type=int, default=1)
     args = parser.parse_args()

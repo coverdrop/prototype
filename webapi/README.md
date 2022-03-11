@@ -64,4 +64,4 @@ For your local setup:
 
 For the production setup:
 
-`curl -i -H "Authorization: Token news_app_token" -X GET http://coverdrop.cl.cam.ac.uk/`
+`curl -i -H "Authorization: Token news_app_token" -X GET TODO_CHANGE_ME`

@@ -108,7 +108,7 @@ int main(){
 json get_messages(std::string getURL) {
 	json toret;
 	try{
-		auto const* host = "coverdrop.cl.cam.ac.uk";
+		auto const* host = "TODO_CHANGE_ME";
 		auto const* port = "80";
 		int version = 11;
 		// The io_context is required for all I/O
@@ -171,7 +171,7 @@ json get_messages(std::string getURL) {
 int delete_message(std::string delURL) {
 	int toret = 1;
 	try {
-		auto const* host = "coverdrop.cl.cam.ac.uk";
+		auto const* host = "TODO_CHANGE_ME";
 		auto const* port = "80";
 		int version = 11;
 		// The io_context is required for all I/O
@@ -245,7 +245,7 @@ void ocall_print_string(const char *str)
 int transmit_message_to_reporter(const char *str, size_t len, uint8_t RID) {
 	int retval = 0;
 	try {
-		auto const* host = "coverdrop.cl.cam.ac.uk";
+		auto const* host = "TODO_CHANGE_ME";
 		auto const* port = "80";
 		std::string target_user = "/send_to_reporter/";
 		target_user = target_user + (char)(RID+'0');

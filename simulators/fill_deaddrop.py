@@ -71,7 +71,7 @@ def run(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--url', type=str, default='http://coverdrop.cl.cam.ac.uk')
+    parser.add_argument('--url', type=str)
     parser.add_argument('--target', type=int, default=240)
     args = parser.parse_args()
 

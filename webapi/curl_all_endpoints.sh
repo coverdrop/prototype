@@ -5,7 +5,6 @@ BASE_URL=$1;
 if [ $# -lt 1 ]; then
   echo 1>&2 "$0: Missing baseUrl argument. Usage examples:";
   echo "     ./curl_all_endpoints.sh 127.0.0.1:5000";
-  echo "     ./curl_all_endpoints.sh coverdrop.cl.cam.ac.uk";
   exit 1;
 fi
 

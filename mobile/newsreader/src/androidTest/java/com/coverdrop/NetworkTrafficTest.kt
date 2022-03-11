@@ -13,7 +13,7 @@ import kotlin.random.Random
 class NetworkTrafficTest {
 
     val CDN_PROTOCOL = "https"
-    val CDN_DOMAIN = "lambdapioneer.de"
+    val CDN_DOMAIN = "TODO_CHANGE_ME"
     val ITERATIONS = 16
 
     val random = Random(0)

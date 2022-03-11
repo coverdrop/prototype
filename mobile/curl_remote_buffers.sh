@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e;
-BASE_URL="coverdrop.cl.cam.ac.uk";
+BASE_URL="TODO_CHANGE_ME";
 
 echo "[ ] /user_messages?count=10";
 curl --fail -s -H "Authorization: Token sgx_token" -X GET $BASE_URL/user_messages?count=10 | jq;

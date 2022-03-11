@@ -20,7 +20,7 @@ import org.json.JSONObject
 
 private const val LOGTAG = "RemoteService"
 private const val DEFAULT_PROTOCOL = "https"
-private const val DEFAULT_DOMAIN = "lambdapioneer.de"
+private const val DEFAULT_DOMAIN = "TODO_CHANGE_ME"
 
 private const val AUTH_TOKEN_NEWS = "Token news_app_token"
 
